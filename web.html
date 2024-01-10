@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="Emporio-armani-logo-vector.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============--> 
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Responsive website </title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class='bx bxs-watch nav__logo-icon'></i> Emporio Armani
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Featured</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">New</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x' ></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag' ></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== CART ====================-->
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+
+        <h2 class="cart__title-center">My Cart</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="emporio-armani-ar11226-i.webp" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">CHRONOGRAPH TWO-TONE STAINLESS STEEL WATCH</h3>
+                    <span class="cart__price">AED 1300</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="emporio-armani-ar11349.webp" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">MEN'S CHRONOGRAPH BLACK LEATHER WATCH</h3>
+                    <span class="cart__price">AED 2000</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="file:///C:/Users/LENOVO/Downloads/emporio-armani-art3019-i.webp" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Chronograph stainless steel watch</h3>
+                    <span class="cart__price">AED 1900</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 items</span>
+            <span class="cart__prices-total">AED 5200</span>
+        </div>
+    </div>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__img-bg">
+                    <img src="C:\Users\LENOVO\Downloads\web\emporio-armani-ar11180.webp" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        Facebook
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                        Twitter
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        Instagram
+                    </a>
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">THE ALL NEW <br> Three-Hand Stainless Steel Watch</h1>
+                    <p class="home__description">
+                        The newest addition to the Three-Hand Stainless Steel Watch series of imported timepieces features a contemporary and durable design.
+                    </p>
+                    <span class="home__price">AED 3500</span>
+
+                    <div class="home__btns">
+                        <a href="#" class="button button--gray button--small">
+                            Discover
+                        </a>
+
+                        <button class="button home__button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== FEATURED ====================-->
+        <section class="featured section container" id="featured">
+            <h2 class="section__title">
+                Featured
+            </h2>
+
+            <div class="featured__container grid">
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="c:\Users\LENOVO\Downloads\emporio-armani-ar11349.webp" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Chronograph Black Stainless<br> Steel Watch</h3>
+                        <span class="featured__price">AED 800</span>
+                    </div>
+
+                    <button class="button featured__button">ADD TO CART</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="c:\Users\LENOVO\Downloads\emporio-armani-ar11431.webp" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Chronograph Black Leather<br> Watch</h3>
+                        <span class="featured__price">AED 900</span>
+                    </div>
+
+                    <button class="button featured__button">ADD TO CART</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="c:\Users\LENOVO\Downloads\emporio-armani-ar1970.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Three-Hand Date Black Leather Watch</h3>
+                        <span class="featured__price">AED 1100</span>
+                    </div>
+
+                    <button class="button featured__button">ADD TO CART</button>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== STORY ====================-->
+        <section class="story section container">
+            <div class="story__container grid">
+                <div class="story__data">
+                    <h2 class="section__title story__section-title">
+                        Our Story
+                    </h2>
+
+                    <h1 class="story__title">
+                        Best Watch of the Year so Far
+                    </h1>
+
+                    <p class="story__description">
+                        Discover the newest and most stylish watches of the year in this store's numerous presentations.
+                    </p>
+
+                    <a href="#" class="button button--small">Discover</a>
+                </div>
+
+                <div class="story__images">
+                    <img src="emporio-armani-ar11446.webp" alt="" class="story__img">
+                    <div class="story__square"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PRODUCTS ====================-->
+        <section class="products section container" id="products">
+            <h2 class="section__title">
+                Products
+            </h2>
+
+            <div class="products__container grid">
+                <article class="products__card">
+                    <img src="c:\Users\LENOVO\Downloads\emporio-armani-ar11275 (1).webp" alt="" class="products__img">
+
+                    <h3 class="products__title">Men's Chronograph<br>Black Leather Watch</h3>
+                    <span class="products__price">AED 2000</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="c:\Users\LENOVO\Downloads\emporio-armani-ar11226-i.webp" alt="" class="products__img">
+
+                    <h3 class="products__title">Chronograph Two-Tone Stainless Steel Watch</h3>
+                    <span class="products__price">AED 1300</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="c:\Users\LENOVO\Downloads\emporio-armani-art3027-i.webp" alt="" class="products__img">
+
+                    <h3 class="products__title">Three-Hand Date Black Leather Watch</h3>
+                    <span class="products__price">AED 1500</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="c:\Users\LENOVO\Downloads\emporio-armani-ar11180.webp" alt="" class="products__img">
+
+                    <h3 class="products__title">Three-Hand Stainless Steel Watch</h3>
+                    <span class="products__price">AED 3200</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="c:\Users\LENOVO\Downloads\emporio-armani-ar0378-fnf.webp" alt="" class="products__img">
+
+                    <h3 class="products__title">Chronograph Brown Leather Watch</h3>
+                    <span class="products__price">AED 600</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section container">
+            <div class="testimonial__container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                These are the best watches one can buy; in addition, they always have the newest fashions and news, come at a very reasonable price, and are particularly noteworthy for their attentiveness to your inquiries and constant availability of the most recent news.
+                            </p>
+                            <h3 class="testimonial__date">January 10. 2024</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="c:\Users\LENOVO\Downloads\2635417.png" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Bailey Glenn</span>
+                                    <span class="testimonial__perfil-detail">A company's director</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                These are the best watches one can buy; in addition, they always have the newest fashions and news, come at a very reasonable price, and are particularly noteworthy for their attentiveness to your inquiries and constant availability of the most recent news.
+                            </p>
+                            <h3 class="testimonial__date">Decemeber 28. 2023</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="c:\Users\LENOVO\Downloads\2635417.png" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Garcia Hawkins</span>
+                                    <span class="testimonial__perfil-detail">A company's director</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                These are the best watches one can buy; in addition, they always have the newest fashions and news, come at a very reasonable price, and are particularly noteworthy for their attentiveness to your inquiries and constant availability of the most recent news.
+                            <p>
+                            <h3 class="testimonial__date">November 26. 2023</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="c:\Users\LENOVO\Downloads\2635417.png" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Adams Jarvis</span>
+                                    <span class="testimonial__perfil-detail">A company's director</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next">
+                        <i class='bx bx-right-arrow-alt' ></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-left-arrow-alt' ></i>
+                    </div>
+                </div>
+
+                <div class="testimonial__images">
+                    <div class="testimonial__square"></div>
+                    <img src="watches_PNG9868.png" alt="" class="testimonial__img">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEW ====================-->
+        <section class="new section container" id="new">
+            <h2 class="section__title">
+                New Arrivals
+            </h2>
+            
+            <div class="new__container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="c:\Users\LENOVO\Downloads\emporio-armani-ar11414.webp" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Chronograph Black Leather Watch</h3>
+                                <span class="new__price">AED 800</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="c:\Users\LENOVO\Downloads\emporio-armani-ar6028-fnf.webp" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Chronograph Stainless Steel Watch</h3>
+                                <span class="new__price">AED 1200</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="c:\Users\LENOVO\Downloads\emporio-armani-ar1676.webp" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Automatic Stainless Steel Watch</h3>
+                                <span class="new__price">AED 1100</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="c:\Users\LENOVO\Downloads\emporio-armani-ar11446.webp" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Chronograph stainless steel watch</h3>
+                                <span class="new__price">AED 1900</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEWSLETTER ====================-->
+        <section class="newsletter section container">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">Become a Newsletter Subscriber</h2>
+                    <p class="newsletter__description">
+                        Don't pass up your savings opportunities. To receive the greatest deals, discounts, coupons, gifts, and much more, sign up for our email newsletter.
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="Enter your email" class="newsletter__input">
+                    <button class="button">
+                        SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Our information</h3>
+
+                <ul class="footer__list">
+                    <li>1536 Stellar Dr</li>
+                    <li>Kenai</li>
+                    <li>Alaska 99611</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Copy Right</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Men</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Women</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Accesories</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">In-Store</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; Emporio Armani. All rigths reserved</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up"> 
+        <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+</body>
+</html>
